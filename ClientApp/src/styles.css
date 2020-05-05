@@ -1,0 +1,43 @@
+
+#nav-menu{
+  background-color: gold!important;
+}
+
+#navbar-toggler{
+  border-color: white;
+}
+
+.nav-link:hover,
+.nav-link:active{
+  color: black!important;
+}
+
+#footer{
+  background-color: #241461;
+  color: white;
+}
+
+@media(min-width: 320px){
+  .container{
+    margin-top: 60px;
+  }
+  .lbl-acess-count{
+    position: relative;
+    top: 5px;
+    left: 2px;
+  }
+}
+
+@media(min-width: 778px){
+  #nav-menu{
+    height: 125px!important;
+  }
+  .container{
+    margin-top: 125px;
+  }
+  .lbl-acess-count{
+    position: relative;
+    top: -32px;
+    left: 125px;
+  }
+}

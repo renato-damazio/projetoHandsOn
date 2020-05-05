@@ -1,0 +1,38 @@
+IF EXISTS (
+    SELECT name FROM master.dbo.sysdatabases 
+    WHERE name = N'HandsOn_04'
+)
+BEGIN
+    SELECT 'Já existe um banco de dados com esse nome!'
+END
+ELSE
+BEGIN
+    CREATE DATABASE [HandsOn_05]
+    SELECT 'Banco de dados criado com sucesso!'
+END
+
+CREATE TABLE tblClientes(
+	clienteID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	nome VARCHAR(80) NOT NULL,
+	cpf VARCHAR(15) NOT NULL,
+	email VARCHAR(80) NOT NULL,
+	telefone VARCHAR(15) NOT NULL,
+	endereco VARCHAR(150) NOT NULL
+)
+GO
+
+INSERT INTO tblClientes VALUES(
+	'Renato Damazio',
+	'34152599863',
+	'r.damazio@yahoo.com.br',
+	'15996164296',
+	'Jardim dos Estados, Sorocaba - SP'
+);
+
+INSERT INTO tblClientes VALUES(
+	'João Paulo da Silva',
+	'12345678912',
+	'jp.silva@gmail.com',
+	'15981234562',
+	'Pinheiros do Amaral, Guapiara- SP'
+);
