@@ -13,6 +13,8 @@ import { ClienteService } from './services/cliente.service';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
 import { AcessoNegadoComponent } from './acesso-negado/acesso-negado.component';
 import { FooterComponent } from './footer/footer.component';
+import { PainelClienteComponent } from './painel-cliente/painel-cliente.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FooterComponent } from './footer/footer.component';
     PlanosComponent,
     CadastroConcluidoComponent,
     AcessoNegadoComponent,
-    FooterComponent
+    FooterComponent,
+    PainelClienteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

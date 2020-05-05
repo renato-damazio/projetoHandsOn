@@ -26,10 +26,8 @@ export class NavMenuComponent implements OnInit {
   readonly rootURL = "http://localhost:54038/api"
 
   onSearchCliente(form: NgForm) {
-    const cpfData = {
-      cpf: this.cpf
-    };
-    return this.http.post(this.rootURL + '/cliente/search', this.cpf).subscribe(
+
+    return this.http.post(this.rootURL + '/cliente/search', JSON.parse(this.cpf)).subscribe(
       res => {
         this.router.navigate(['', 'painel-cliente']);
       },

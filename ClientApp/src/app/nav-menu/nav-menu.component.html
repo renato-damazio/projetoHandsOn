@@ -22,7 +22,7 @@
       <form class="form-inline mt-2 mt-md-0" #form="ngForm" autocomplete="off" (submit)="onSearchCliente(form)">
         <div class="form-group">
           <label class="lbl-acess-count"><b>Acesse&nbsp;</b>sua conta</label>
-          <input type="text" name="cpf" [(ngModel)]="cpf" class="form-control" placeholder="Digite seu CPF">
+          <input type="text" name="cpf" [(ngModel)]="cpf" class="form-control" placeholder="Digite seu CPF" maxlength="11" minlength="11" required>
           <button class="btn btn-primary my-2 my-sm-0" type="submit">Acessar</button>
         </div>
       </form>

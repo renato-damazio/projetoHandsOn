@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-planos',
-  templateUrl: './planos.component.html',
-  styleUrls: ['./planos.component.css']
+  selector: 'app-painel-cliente',
+  templateUrl: './painel-cliente.component.html',
+  styleUrls: ['./painel-cliente.component.css']
 })
-export class PlanosComponent implements OnInit {
+export class PainelClienteComponent implements OnInit {
 
   router: Router;
 
